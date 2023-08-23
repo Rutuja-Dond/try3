@@ -1,0 +1,124 @@
+{
+  "user": [
+    {
+      "id": "himanshump",
+      "username": "himanshump",
+      "name": "Himanshu Patil",
+      "password": "himanshu123",
+      "designation": "ATL",
+      "mobile": "22222222222",
+      "age": "23",
+      "email": "himanshu@gmal.com",
+      "team": [
+        {
+          "id": "Chiranjeevi Sai Ibba",
+          "username": "Chiranjeevi",
+          "name": "Chiranjeevi Sai Ibba",
+          "password": "chiranjeevi123",
+          "designation": "TM",
+          "mobile": "09999999999",
+          "age": "23",
+          "email": "chiranjeeviibba@gmal.com",
+          "teamlead": "himanshump"
+        },
+        {
+          "id": "Chandu Senapathi",
+          "username": "Chandu",
+          "name": "Chandu Senapathi",
+          "password": "chandu123",
+          "designation": "TM",
+          "mobile": "2222222222222",
+          "age": "23",
+          "email": "chandu@gmail.com",
+          "teamlead": "himanshump"
+        },
+        {
+          "id": "Nayana Patil",
+          "username": "Nayana",
+          "name": "Nayana Patil",
+          "password": "nayana123",
+          "designation": "Mentor",
+          "mobile": "5555555555",
+          "age": "23",
+          "email": "nayana@gmail.com",
+          "team": [
+            {
+              "id": "Member 1",
+              "username": "Member1",
+              "name": "Member 1",
+              "password": "member1123",
+              "designation": "TM",
+              "mobile": "2222222222222",
+              "age": "23",
+              "email": "member1@gmail.com"
+            },
+            {
+              "id": "Member 2",
+              "username": "Member2",
+              "name": "Member 2",
+              "password": "member2123",
+              "designation": "TM",
+              "mobile": "2222222222222",
+              "age": "23",
+              "email": "member2@gmail.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vipinsingh",
+      "username": "vipinsingh",
+      "name": "Vipin Singh",
+      "password": "vipinsingh123",
+      "designation": "ATL",
+      "mobile": "22222222222",
+      "age": "23",
+      "email": "vipin@gmal.com",
+      "team": [
+        {
+          "id": "rutujad",
+          "username": "rutujad",
+          "name": "Rutuja",
+          "password": "rutuja123",
+          "designation": "TM",
+          "mobile": "2222222222",
+          "age": "23",
+          "email": "rutuja@gmal.com"
+        },
+        {
+          "id": "anikets",
+          "username": "anikets",
+          "name": "Aniket",
+          "password": "aniket123",
+          "designation": "Mentor",
+          "mobile": "2222222222",
+          "age": "23",
+          "email": "aniket@gmal.com",
+          "team": [
+            {
+              "id": "Member 3",
+              "username": "Member3",
+              "name": "Member 3",
+              "password": "member3123",
+              "designation": "TM",
+              "mobile": "2222222222222",
+              "age": "23",
+              "email": "member3@gmail.com"
+            },
+            {
+              "id": "Member 4",
+              "username": "Member4",
+              "name": "Member 4",
+              "password": "member4123",
+              "designation": "TM",
+              "mobile": "2222222222222",
+              "age": "23",
+              "email": "member4@gmail.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
