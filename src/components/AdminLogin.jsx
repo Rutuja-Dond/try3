@@ -32,7 +32,7 @@ export default function AdminLogin() {
         return result;
     }
     const checkLoginCreds = async() => {
-        await axios.get(`http://localhost:3000/user/${username}`)
+        await axios.get(`/user/${username}`)
         .then((res)=>{
             console.log(password)
             if(Object.keys(res).length === 0) {

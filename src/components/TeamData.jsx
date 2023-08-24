@@ -12,7 +12,7 @@ export const TeamData = () => {
     const [userDetails, setUserDetails] = useState([]);
 
     const getTeamInfo = async () => {
-        await axios.get(`http://localhost:3000/user/${username}`)
+        await axios.get(`/user/${username}`)
         .then((res)=>{
             setRecords(res.data.team);
         })
@@ -64,7 +64,7 @@ export const TeamData = () => {
         // console.log(records);
         // console.log({team: [...records, newUserData]});
 
-        await axios.patch(`http://localhost:3000/user/${username}`,{team: [...records, newUserData]},
+        await axios.patch(`/user/${username}`,{team: [...records, newUserData]},
         {headers:{"Content-Type" : "application/json"}}).then((res)=>{
            console.log([...records, newUserData])
            setRecords([...records, newUserData]);
@@ -87,7 +87,7 @@ export const TeamData = () => {
         // console.log(updatedRecords);
         
 
-        await axios.patch(`http://localhost:3000/user/${username}`,{team: updatedRecords},
+        await axios.patch(`/user/${username}`,{team: updatedRecords},
         {headers:{"Content-Type" : "application/json"}}).then((res)=>{
            console.log(updatedRecords)
            setRecords(updatedRecords)
@@ -112,7 +112,7 @@ export const TeamData = () => {
         let updatedRecords = records.filter(each => each.id !== data.id);
         setRecords(updatedRecords)
 
-        await axios.patch(`http://localhost:3000/user/${username}`,{team: updatedRecords})
+        await axios.patch(`/user/${username}`,{team: updatedRecords})
         .then((res)=>{
            console.log("delete success")
         }).catch((err)=>{

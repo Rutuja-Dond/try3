@@ -40,7 +40,7 @@ export default function UserLogin() {
         let spareHolder = [];
         let activeuser;
 
-        await axios.get(`http://localhost:3000/user/`)
+        await axios.get(`/user/`)
         .then((res)=>{
             // console.log(res.data);
             res.data?.map(each => {
@@ -86,7 +86,7 @@ export default function UserLogin() {
 
 
 
-        // await axios.get(`http://localhost:3000/user/${username}`)
+        // await axios.get(`/user/${username}`)
         // .then((res)=>{
         //     console.log(password)
         //     if(Object.keys(res).length === 0) {
@@ -108,7 +108,7 @@ export default function UserLogin() {
 
     const getAllUsersData = async () => {
         let spareHolder = [];
-        await axios.get(`http://localhost:3000/user/`)
+        await axios.get(`/user/`)
         .then((res)=>{
             console.log(res.data);
             res.data?.map(each => {

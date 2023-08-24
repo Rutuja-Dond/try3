@@ -22,7 +22,7 @@ const AddMember = () => {
     const submitForm = async(e) => {
         console.log("hello");
         e.preventDefault();
-        await axios.post(`http://localhost:3000/user/`,{
+        await axios.post(`/user/`,{
             id:memberdata.fullName,
             username: memberdata.fullName,
             name:memberdata.fullName,
