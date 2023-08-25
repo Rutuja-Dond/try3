@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aws-sdk": "^2.1444.0",
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "json-serve": "^0.1.0",
