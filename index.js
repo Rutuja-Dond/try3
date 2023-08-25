@@ -6,7 +6,7 @@ import { dirname } from "path";
 import AWS from "aws-sdk";
 
 AWS.config.update({
-  region: "us-east-2",
+  region: "ap-northeast-1",
   accessKeyId: "ASIA3MWOM5O5UUET53NL",
   secretAccessKey: "VjU8HcLHsNIa1Ej8yWO8hdFQsjpXQ81GMxZFy8X8",
 });
@@ -23,16 +23,14 @@ server.use(jsonServer.bodyParser);
 server.use(middlewares);
 server.use(router);
 
-// AWS S3 interaction
 const s3 = new AWS.S3();
 
-// Read and write operations
 server.get("/read-s3", async (req, res) => {
   try {
     const s3Response = await s3
       .getObject({
-        Bucket: "cyclic-lime-brainy-llama-us-east-2",
-        Key: "some_files/my_file.json",
+        Bucket: "cyclic-tan-funny-jaguar-ap-northeast-1",
+        Key: "./db.json",
       })
       .promise();
 
@@ -48,8 +46,8 @@ server.post("/write-s3", async (req, res) => {
     await s3
       .putObject({
         Body: JSON.stringify(req.body),
-        Bucket: "cyclic-lime-brainy-llama-us-east-2",
-        Key: "some_files/my_file.json",
+        Bucket: "cyclic-tan-funny-jaguar-ap-northeast-1",
+        Key: "./db.json",
       })
       .promise();
 
