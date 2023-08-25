@@ -14,12 +14,6 @@ const middlewares = jsonServer.defaults();
 server.use(cors());
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
-
-// Remove read-only restriction for the database
-router.db._.read = function () {
-  return this.__wrapped__;
-};
-
 server.use(router);
 
 const PORT = 3000;
