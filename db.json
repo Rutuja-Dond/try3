@@ -120,5 +120,8 @@
         }
       ]
     }
-  ]
+  ],
+  "key": {
+    "value": "someValue"
+  }
 }
