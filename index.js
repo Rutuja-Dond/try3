@@ -14,6 +14,23 @@ const middlewares = jsonServer.defaults();
 server.use(cors());
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
+
+// Custom authentication and authorization middleware
+const authenticate = (req, res, next) => {
+  const authToken = req.headers.authorization;
+
+  // Check if authToken is valid (this is just a simple example)
+  if (authToken === "mysecrettoken") {
+    // User is authenticated, proceed to the next middleware
+    next();
+  } else {
+    res.status(403).json({ message: "Forbidden: Authentication failed." });
+  }
+};
+
+// Apply authentication middleware to specific routes
+server.use("/api/protected", authenticate);
+
 server.use(router);
 
 const PORT = 3000;
