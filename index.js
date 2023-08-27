@@ -19,7 +19,7 @@ const dynamodb = new AWS.DynamoDB.DocumentClient();
 
 app.use(express.static("public"));
 
-app.get("/user", async (req, res) => {
+app.get("/data", async (req, res) => {
   try {
     const params = {
       TableName: "combative-life-jacket-mothCyclicDB",
